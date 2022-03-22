@@ -15,6 +15,7 @@ ul,
 ol,
 li {
     list-style: none;
+    padding-inline-start: 0;
 }
 img {
     vertical-align: top;
@@ -31,28 +32,76 @@ h6 {
 html,
 body {
     width: 100%;
-    line-height: 1px;
+
+    /* line-height: 1px; */
 }
+
+body {
+    width: 1440px;
+    height: 800px;
+    background-image: url(../img/hero-background4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .container {
-    width: 1200px;
+    width: 1440px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 }
+
+.header-logo {
+    margin-left: 165px;
+}
+
+.header-icon {
+    width: 100px;
+    height: 68px;
+}
 .contact-list {
+    margin-top: 55px;
     display: flex;
 }
 .header-menu {
     display: flex;
+    width: 742px;
+    height: 74px;
+    padding-top: 24px;
+    padding-bottom: 30px;
+    margin-left: 260px;
     font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.35;
     color: var(--button-text-color);
+    white-space: nowrap;
+}
+.header-menu__link {
+    font-family: "Open Sans";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: var(--button-text-color);
+}
+
+.header-menu__item {
+    text-decoration: none;
+    color: var(--button-text-color);
+}
+
+.header-menu__button {
+    margin-left: 65px;
+}
+
+.header-menu__item + .header-menu__item {
+    margin-left: 25px;
 }
 .contact-icon {
-    fill: #180a0a62;
+    width: 23px;
+    height: 23px;
+    fill: var(--subtitle-first-color);
 }
 .button {
     width: 157px;
@@ -63,15 +112,16 @@ body {
     color: var(--button-text-color);
     background-color: var(--button-background-color);
 }
-.hero-name-upper {
+
+.hero-name__upper {
     font-family: Tinos;
-    font-style: normal;
-    font-weight: normal;
     font-size: 50px;
     line-height: 1.14;
-    color: #d67e35;
+    color: var(--button-background-color);
+    margin-top: 203px;
+    margin-left: 175px;
 }
-.hero-name-bottom {
+.hero-name__bottom {
     font-family: Tinos;
     font-style: normal;
     font-weight: normal;
@@ -79,7 +129,7 @@ body {
     line-height: 1.15px;
     color: #d67e35;
 }
-.hero-name-undertitle {
+.hero-name__undertitle {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
